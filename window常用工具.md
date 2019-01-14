@@ -3,7 +3,7 @@ title: windows下常用工具
 date: 2019-01-14 10:50:40
 tags: linux
 ---
-1. everything 搜索神器
+1. everything 搜索神器, 强烈推荐
 2. faststone capture 红绿小工具，工具小功能强
 3. clcl  复制粘贴神器
 4. f.lux linux和windows都用，自动根据经纬度调整屏幕亮度
