@@ -12,7 +12,7 @@ tags: linux
 7. 远程工具 anydesk teamview
 8. zeal 文档阅读器
 9. itellij idea java开发工具
-   插件推荐: vim  plantuml(这个玩意儿依赖于一个小软件(graphviz)， 需要单独装)、 jprofiler(需要配套对应的软件, 用来查看系统耗时，作为调节性能的依据)
+     插件推荐: vim  plantuml(这个玩意儿依赖于一个小软件(graphviz)， 需要单独装)、 jprofiler(需要配套对应的软件, 用来查看系统耗时，作为调节性能的依据)
 10. 软媒魔方 偶尔用用 更新软件了什么的
 11. unlocker  文件诡异的锁住了，用这个解锁，随便搞
 12. ccleaner 电脑清理的，不知道为啥一直用着
