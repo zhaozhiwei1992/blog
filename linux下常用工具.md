@@ -48,7 +48,9 @@ tags: linux
       + pacman -S oracle-sqldeveloper
       + 安装过程中将刚刚下载的zip包放到其他pass文件同级的目录, 继续即可
   18. postman curl 模拟请求
-      + curl -H "Accept:application/json" -H "Content-Type:application/json" -X POST -d '{"id":1}' http://127.0.0.1:8080/user/save
+      ```
+	  curl -H "Accept:application/json" -H "Content-Type:application/json" -X POST -d '{"id":1}' http://127.0.0.1:8080/user/save
+	  ```
   20. processon/graphviz 流程图
       + c-c c-c编译执行dot文件
 
