@@ -1,7 +1,7 @@
 ---
-title: linux下常用工具
-date: 2019-01-13 17:50:40
-tags: linux
+title: nodejs实战
+date: 2019-03-04 17:50:40
+tags: nodejs
 ---
 # nodejs项目初始化
   1. 创建目录 mkdir nodejs & cd nodejs
@@ -118,3 +118,9 @@ tags: linux
 # extend
 
 Sub 仅仅继承了Base 在原型中定义的函数，而构造函数内部创造的 base 属 性和 sayHello 函数都没有被 Sub 继承。
+
+
+
+# 总结
+
+如果有一定变成基础，nodejs还是很easy的， 例子6一下就可以， 入门容易，用好就需要code code code!
