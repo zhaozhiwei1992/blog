@@ -10,7 +10,7 @@ tags: linux
 
   3. 创建server.js文件,并写入以下内容
      ``` javascript
-     // 内置组件
+     // 内置组件  
       var http=require("http");
      
       http.createServer(function(request, response){
