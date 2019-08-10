@@ -199,6 +199,12 @@ IDEA中有很多快捷键让人爱不释手，stackoverflow上也有一些有趣
     -   Top \#1自我修复：Alt+Enter
     -   Top \#1重构一切：Ctrl+Shift+Alt+T
 
+全选复选框
+----------
+
+1.  shift全部选中
+2.  空格勾选
+
 一些实用的设置
 ==============
 
@@ -254,6 +260,12 @@ IDEA中有很多快捷键让人爱不释手，stackoverflow上也有一些有趣
     2.  setting--\> resp中url使用这个项目
     3.  这就是个github项目随便玩.
 -   隐藏页签, 在页签右键，none
+
+修改host, 防止idea检测注册信息
+==============================
+
+127.0.0.1 localhost.localdomain localhost arch ::1	localhost.localdomain
+localhost arch \#\#\# idea 0.0.0.0 account.jetbrains.com
 
 插件推荐
 ========
