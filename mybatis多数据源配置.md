@@ -467,3 +467,8 @@ springboot多数据源配置
     by: java.lang.IllegalArgumentException: error Type referred to is
     not an annotation type: DS 这种方式才可以,
     @Before(\"@annotation(com.lx.demo.annotation.DS)\")
+
+代码路径
+--------
+
+-   <https://github.com/microzhao/demo/tree/master/springboot/springboot-mybatis/mybatis-mutidatasource>

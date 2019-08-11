@@ -103,7 +103,8 @@ tags: [开发工具, intellij, idea]
 -   SHIFT+ALT+INSERT 竖编辑模式
 -   CTRL+F4 关闭当前窗口
 -   Ctrl+Alt+V，可以引入变量。例如：new String(); 自动导入变量定义
--   Ctrl+\~，快速切换方案（界面外观、代码风格、快捷键映射等菜单）
+-   Ctrl+\~，快速切换方案（界面外观、代码风格、快捷键映射等菜单）,
+    可以切换主题
 
 svn快捷键
 ---------
@@ -260,6 +261,8 @@ IDEA中有很多快捷键让人爱不释手，stackoverflow上也有一些有趣
     2.  setting--\> resp中url使用这个项目
     3.  这就是个github项目随便玩.
 -   隐藏页签, 在页签右键，none
+-   社区版没有 import setting选项，所以安装主题ui就直接搜plugin,
+    然后找对应主题名即可
 
 修改host, 防止idea检测注册信息
 ==============================
