@@ -105,6 +105,11 @@ arch linux (linux 命令很强大， 命令才是王道啊\~\~\~)
 25. cairo-dock dock工具，样式挺好看，不过习惯了launcher运行, 不喜欢点,
     不使用
 
+26. 同步工具
+
+    -   Dropbox 这玩意儿有qiang, 并且你的文件需要服务器中转
+    -   syncthing, 这个东东是通过p2p发送，可以设备互传，好东西
+
 问题处理
 ========
 

@@ -14,7 +14,7 @@ tags: [开发工具, intellij, idea]
 -   例如要输入for(User user : users)只需输入user.for+Tab
 -   再比如，要输入Date birthday =
     user.getBirthday();只需输入user.getBirthday().var+Tab即可。代码标签输入完成后，按Tab，生成代码。
--   Ctrl+Alt+O 优化导入的类和包
+-   Ctrl+Alt+O 优化导入的类和包, 清理import
 -   Alt+Insert 生成代码(如get,set方法,构造函数等) 或者右键（Generate）
 -   fori/sout/psvm + Tab
 -   Ctrl+Alt+T 生成try catch 或者 Alt+enter
