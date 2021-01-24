@@ -1,7 +1,7 @@
 ---
 title: windows下常用工具
 date: 2019-01-14 10:50:40
-tags: linux
+tags: windows, 实用工具
 ---
 1. everything 搜索神器, 强烈推荐
 2. faststone capture 红绿小工具，工具小功能强
@@ -19,3 +19,10 @@ tags: linux
 13. beyond compare  文件比较软件
 14. rescue time 有兴趣可以看看， 这个是记录你一天在干嘛的软件
 15. gvim 文本编辑器 我一般只用这个和notepad++
+16. scoop命令行下的包管理器，软件有点少但是社区还是很给力的, 建议添加extral包
+  + 参考: https://sspai.com/post/52710
+17. dism++ 垃圾清理, 备份还原，等。
+18. spacesniffer 无需安装，分析磁盘，清理文件
+19. 独立版本qq软件管理
+  + https://www.52pojie.cn/thread-1170453-1-1.html
+

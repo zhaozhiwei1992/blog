@@ -109,6 +109,15 @@ arch linux (linux 命令很强大， 命令才是王道啊\~\~\~)
 
     -   Dropbox 这玩意儿有qiang, 并且你的文件需要服务器中转
     -   syncthing, 这个东东是通过p2p发送，可以设备互传，好东西
+27. 截图工具 scrot
+  + scrot 全屏
+  + scrot -s 截取
+  + scrot -e 'mv $f ~/Pictures/scrot_screenshots' 截图后执行命令
+28. 命令行下模糊搜索工具 fzf
+  + 搭配其它工具或者自己组合命令都很6,可以作为插件加入到vim, ranger, zsh中
+  + 通过搜索可以更方便的打开文件，不用一一展开
+29. 简化版命令手册 tldr, 我这里使用的是tealdeer,arch默认的使用不了, 可以优雅的查看常用命令的基本使用方式
+
 
 问题处理
 ========
