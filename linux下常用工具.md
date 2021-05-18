@@ -1,11 +1,9 @@
 ---
 title: linux下常用工具
-date: <2019-07-24 三>
-tags: [linux, 工具]
+tags: [linux, 常用工具]
 ---
 
-arch linux (linux 命令很强大， 命令才是王道啊\~\~\~)
-====================================================
+# arch linux (linux 命令很强大， 命令才是王道啊\~\~\~)
 
 1.  f.lux 根据经纬度调整屏幕亮度
 
@@ -51,7 +49,7 @@ arch linux (linux 命令很强大， 命令才是王道啊\~\~\~)
 
 12. 锁屏 yaourt -S xlockmore
 
-13. create~ap~ github下的一个项目， 共享热点必备
+13. create_ap github下的一个项目， 共享热点必备
 
     ``` {.example}
     配置启动: nohup sudo create_ap wlp2s0 enp0s20u2u4 archer 1234567890 > /tmp/create_ap.log & tail -f /tmp/create_ap.log
@@ -91,7 +89,7 @@ arch linux (linux 命令很强大， 命令才是王道啊\~\~\~)
 
     -   [离线版安装地址](https://www.dropbox.com/downloading?src=index&full=1)
 
-21. ag搜索 the~silversearcher~
+21. ag搜索 the_silver_searcher
 
 22. xml处理工具 xmlstarlet, jq处理json, shyaml处理yaml
 
@@ -109,22 +107,29 @@ arch linux (linux 命令很强大， 命令才是王道啊\~\~\~)
 
     -   Dropbox 这玩意儿有qiang, 并且你的文件需要服务器中转
     -   syncthing, 这个东东是通过p2p发送，可以设备互传，好东西
+
 27. 截图工具 scrot
-  + scrot 全屏
-  + scrot -s 截取
-  + scrot -e 'mv $f ~/Pictures/scrot_screenshots' 截图后执行命令
+
+    -   scrot 全屏
+    -   scrot -s 截取
+    -   scrot -e \'mv \$f \~/Pictures/scrot_screenshots\' 截图后执行命令
+
 28. 命令行下模糊搜索工具 fzf
-  + 搭配其它工具或者自己组合命令都很6,可以作为插件加入到vim, ranger, zsh中
-  + 通过搜索可以更方便的打开文件，不用一一展开
-29. 简化版命令手册 tldr, 我这里使用的是tealdeer,arch默认的使用不了, 可以优雅的查看常用命令的基本使用方式
 
+    -   搭配其它工具或者自己组合命令都很6,可以作为插件加入到vim, ranger,
+        zsh中
+    -   通过搜索可以更方便的打开文件，不用一一展开
 
-问题处理
-========
+29. 简化版命令手册 tldr, 我这里使用的是tealdeer,arch默认的使用不了,
+    可以优雅的查看常用命令的基本使用方式
+
+30. 远程连接windows桌面
+
+    -   rdesktop 192.168.2.144 -p lt\@180606 -u lt1 -g workarea
+    -   rdesktop 192.168.2.144 -p password -u username -r
+        disk:share=/tmp
+        可以将当前系统下/tmp目录作为共享磁盘给远程服务器，可以实现文件copy
+
+# 问题处理
 
 1.  网易云音乐白板 : rm \`locate netease \|grep cache\` 删掉缓存即可
-
-远程连接windows桌面
-===================
-
-➜ \~ rdesktop 192.168.2.144 -p lt\@180606 -u lt1 -g workarea
