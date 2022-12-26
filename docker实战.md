@@ -1,10 +1,10 @@
 ---
 title: docker实践
-date: <2019-07-19 五>
+date: 2019-07-19
 tags: docker, linux
 ---
 
-环境准本
+环境准备
 ========
 
 -   华为云 centos系统
@@ -48,14 +48,14 @@ tar -zcvf jdk.tar.gz ~/applications/jdk1.7 #jdk
     -   在服务建立与本地一致的目录
 
         ``` {.example}
-        mkdir /home/lx7ly/applications
+        mkdir ~/applications
         ```
 
     -   解压文件
 
         ``` {.example}
-        tar -zxvf /root/weblogic.tar.gz -C /home/lx7ly
-        tar -zxvf /root/jdk.tar.gz -C /home/lx7ly/applications
+        tar -zxvf /root/weblogic.tar.gz -C ~
+        tar -zxvf /root/jdk.tar.gz -C ~/applications
         ```
 
 -   在云服务器上配置启动web服务,
@@ -73,7 +73,7 @@ tar -zcvf jdk.tar.gz ~/applications/jdk1.7 #jdk
 
 -   Dockerfile文件
 
-    -   touch /home/lx7ly/Dockerfile
+    -   touch ~/Dockerfile
 
         ``` {.example}
         #Dockerfile  
@@ -88,7 +88,7 @@ tar -zcvf jdk.tar.gz ~/applications/jdk1.7 #jdk
         #可以安装软件
         #RUN yum install xx
         # 需要打到docker中的文件全部copy到docker对应的目录中， 本地目录是相对当前目录，不能写绝对路径, 后面这个路径最好加/
-        COPY . /home/lx7ly/
+        COPY . ~/
         COPY cmd.sh /cmd.sh
         # 容器启动后直接执行给定脚本
         CMD sh /cmd.sh
@@ -97,7 +97,7 @@ tar -zcvf jdk.tar.gz ~/applications/jdk1.7 #jdk
 
     -   制作镜像
 
-        -   进入目录 /home/lx7ly 在目录 /home/lx7ly中目前存在
+        -   进入目录 ~ 在目录 ~中目前存在
 
             ``` {.example}
             drwxr-xr-x 3 root root 4096 Sep 30 10:49 applications
@@ -131,7 +131,7 @@ tar -zcvf jdk.tar.gz ~/applications/jdk1.7 #jdk
     ``` {.example}
     #!/bin/bash
     domainname=$1 # 这里如果没有其他情况可以写死
-    nohup sh /home/lx7ly/Oracle/Middleware/user_projects/domains/$domainname/startWebLogic.sh > /7003.log & tail -f /7003.log 
+    nohup sh ~/Oracle/Middleware/user_projects/domains/$domainname/startWebLogic.sh > /7003.log & tail -f /7003.log 
     ```
 
 -   通过上一步镜像启动
@@ -226,15 +226,3 @@ docker到底能干个啥?
 -   尝试用Docker做分布式集群模拟和测试，成本会更加低廉，更加容易维护
 -   参考:
     <https://www.csdn.net/article/2014-06-19/2820312-Docker-lxc-paas-virtualization>
-
-搞个玩具
-========
-
--   将公司项目开发做到docker, 帮助新人快速构建开发环境
--   项目依赖
-    -   jdk1.6
-    -   weblogic 10.3.6
-    -   oracle11g (这玩意儿一般不装到本地找虐)
--   技术点(目前没思路, 关键文件不能提交到仓库中)
-    -   源码和容器关系, 如何引用静态文件和变异的class文件到容器中
-    -   一些关键配置文件  

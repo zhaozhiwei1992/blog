@@ -1,6 +1,7 @@
 ---
 title: intellij idea快捷键实战
-date: <2019-07-25 四>
+date: 2019-07-25
+updated: 2019-07-25
 tags: [开发工具, intellij, idea]
 ---
 

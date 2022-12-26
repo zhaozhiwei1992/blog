@@ -1,5 +1,7 @@
 ---
 title: linux下常用工具
+date: 2019-07-25 
+updated: 2019-07-25 
 tags: [linux, 常用工具]
 ---
 

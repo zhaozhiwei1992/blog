@@ -1,6 +1,7 @@
 ---
 title: springboot+rabbitmq实战
-date: <2019-08-11 日>
+date: 2019-08-11
+updated: 2019-08-11
 tags: [springboot, rabbitmq, queue]
 ---
 

@@ -1,6 +1,7 @@
 ---
-date: \<2021-05-18 二\>
 title: 迁移polardb问题一
+date: 2021-05-18
+updated: 2021-05-18
 categories: 软件, 数据库
 tags: polardb, mybatis
 ---
@@ -51,27 +52,26 @@ mybatis查询act_tem_def表涉及到blob字段(content_bytes)，
 # 解决方案
 
 1.  在业务下重写BlobTypeHandler, 获取getBinaryStream然后转换byte数组
-
 2.  mapper.xml -\> resultmap中, 加入下述转换
 
-    ``` {.example}
-    <result column="CONTENT_BYTES" property="contentBytes" jdbcType="BLOB"
-       typeHandler="com.example.springbootpolardb.handler.PolarDbBlobTypeHandler"/>
-    ```
+``` {.example}
+<result column="CONTENT_BYTES" property="contentBytes" jdbcType="BLOB"
+  typeHandler="com.example.springbootpolardb.handler.PolarDbBlobTypeHandler"/>
+```
 
-3.  转换逻辑
+## 转换逻辑
 
-    ``` {.example}
-    public static byte[] toByteArray(InputStream input) throws IOException {
-        ByteArrayOutputStream output = new ByteArrayOutputStream();
-        byte[] buffer = new byte[4096];
-        int n = 0;
-        while (-1 != (n = input.read(buffer))) {
-            output.write(buffer, 0, n);
-        }
-        return output.toByteArray();
+``` {.example}
+public static byte[] toByteArray(InputStream input) throws IOException {
+    ByteArrayOutputStream output = new ByteArrayOutputStream();
+    byte[] buffer = new byte[4096];
+    int n = 0;
+    while (-1 != (n = input.read(buffer))) {
+        output.write(buffer, 0, n);
     }
-    ```
+    return output.toByteArray();
+}
+```
 
 # 代码
 

@@ -1,6 +1,7 @@
 ---
 title: thinkpadt480安装archlinux实战
-date: <2019-07-24 三>
+date: 2019-07-24
+updated: 2019-07-24
 tags: [archlinux, thinkpad, grub]
 ---
 

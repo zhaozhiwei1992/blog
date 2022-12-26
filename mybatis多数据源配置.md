@@ -1,6 +1,7 @@
 ---
 title: springboot+mybatis多数据源配置
-date: <2019-08-10 六>
+date: 2019-08-10
+updated: 2019-08-10
 tags: [springboot, mybatis, datasource, mysql]
 ---
 
