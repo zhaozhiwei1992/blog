@@ -57,4 +57,58 @@ UI没有现成的NAS看起来好看统一。
 # 如何自建
 ## 一台个人闲置电脑
 首先要有一台电脑，最好是台式机，小机箱也行，但是如果需要扩展多块硬盘还是大点好。其次是系统，我个人是使用archlinux习惯了，也可以使用其它发行版本。
+## DLNA/UPnP家庭流媒体服务 jellyfin + KODI(播放器) 家庭影院软件
+https://jellyfin.org/docs/general/installation/linux/
 
+```
+# 启动
+systemctl start jellyfin.service
+# 访问, 按照自己设置的密码搞起即可
+http://127.0.0.1:8096
+```
+
+## BT下载aria2
+## Linux服务器web管理神器--Cockpit (作为服务资源监控管理工具使用)
+```
+#启动
+systemctl start cockpit.service
+# 访问
+http://localhost:9091
+```
+## 照片查看 photoprism
+
+https://docs.photoprism.app/user-guide/
+
+```
+cd ~/.photoprism
+docker-compose up -d
+
+#访问
+http://127.0.0.1:2342
+
+PhotoPrism 的默认用户名为 admin，密码为 insecure
+```
+
+### 注
+
+优势: 可以使用现有的存储路径，重建索引
+
+缺点: 只有网页版
+
+## 网盘聚合alist + rclone(非必须)
+
+可以通过该工具,直接在线访问网盘中视频,或者配合其它工具(rclone)通过webdav将网盘目录挂载到本地
+
+windows下用RaiDrive替代rclone
+
+## samba: Samba(SMB)文件共享服务(非必须)
+主要是用来跟win进行数据共享，如果有需要可以安装起来
+
+## 移动端
+
+### 视频播放 mxplayer(安卓) nplayer(ios)
+
+### 浏览器直接访问
+
+# 结语
+上述就是自建一个简单版NAS的全部内容，限于篇幅，如果在自建过程中有什么不了解的，可以后台留言指导。
