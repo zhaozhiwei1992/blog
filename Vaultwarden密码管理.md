@@ -1,8 +1,8 @@
 ---
 title: 本地密码管理器-Vaultwarden
-date: 2025-03-10
-updated: 2025-03-10
-tags: [OpenManus, AI, DeepSeek]
+date: 2025-04-22
+updated: 2025-04-22
+tags: [密码管理, 安全]
 ---
 # 前言
 
