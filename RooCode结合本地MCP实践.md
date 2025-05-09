@@ -96,7 +96,7 @@ pip install fastmcp
 
 配置完成后，mcpServer会显示绿色图标,如下
 
-![mcp配置](https://43.143.194.245/minio/images/roocode_mcp.png)
+![mcp配置](https://19921514.xyz/minio/images/roocode_mcp.png)
 
 如果在之前SumMCP.py中增加了工具，一定要在这里刷新下，显示出新的工具，然后在插件中使用才会读取到。
 
@@ -106,13 +106,13 @@ pip install fastmcp
 
 使用demo工具, 计算99和98的和, 效果如下
 
-![显示求和](https://43.143.194.245/minio/images/roocode_mcp_sum.png)
+![显示求和](https://19921514.xyz/minio/images/roocode_mcp_sum.png)
 
 ### 显示文件列表
 
 使用listdir工具显示 /home/xx/Documents下的文件列表，效果如下
 
-![显示文件列表](https://43.143.194.245/minio/images/roocode_mcp_listdir.png)
+![显示文件列表](https://19921514.xyz/minio/images/roocode_mcp_listdir.png)
 
 # 总结
 
